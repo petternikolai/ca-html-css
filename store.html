@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The store page of GameHub">
+  <script src="https://kit.fontawesome.com/f2ebdb1586.js" crossorigin="anonymous"></script>
+  <link href="css/styles.css" rel="stylesheet">
+  <title>GameHub | Store</title>
+</head>
+
+<body id="store">
+  <header>
+    <input type="checkbox" id="menu-checkbox">
+    <label for="menu-checkbox" class="hamburger-icon"><i class="fas fa-bars"></i></label>
+    <nav>
+      <a href="index.html">HOME</a>
+      <a href="store.html">STORE</a>
+      <a href="about.html">ABOUT</a>
+      <a href="contact.html">CONTACT</a>
+    </nav>
+    <form action="/" method="GET" class="form">
+      <input type="search" placeholder="Search store" class="search-field">
+      <button class="search-button">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+    </form>
+    <a href="#" id="magnifying-glass-icon"><i class="fa-solid fa-magnifying-glass"></i></a>
+    <a href="cart.html" id="shopping-cart-icon"><i class="fa-solid fa-cart-shopping"></i></a>
+  </header>
+  <main>
+    <section>
+      <h1 class="hide">Best Sellers</h1>
+      <div class="store-s1-desktop">
+        <div class="game-preview-large">
+          <a href="/products/deadspace.html">
+            <img src="/images/deadspace.jpg" alt="Dead Space cover art">
+          </a>
+          <div class="bottom-left">
+            <p>Out Now</p>
+            <p>
+              The sci-fi survival horror<br>
+              classic returns
+            </p>
+            <p id="button"><a href="/products/deadspace.html">NOK 599</a></p>
+          </div>
+        </div>
+        <div class="game-preview-small">
+          <ul>
+            <li class="background-active">
+              <a href="/products/deadspace.html">
+                <img src="/images/deadspace.jpg" alt="Dead Space cover art">
+                <p>Dead Space</p>
+              </a>
+            </li>
+            <li class="background">
+              <a href="#">
+                <img src="/images/gtav.jpg" alt="Grand Theft Auto: V cover art">
+                <p>Grand Theft Auto: V</p>
+              </a>
+            </li>
+            <li class="background">
+              <a href="#">
+                <img src="/images/mw2.jpg" alt="Modern Warfare 2 cover art">
+                <p>Modern Warfare 2</p>
+              </a>
+            </li>
+            <li class="background">
+              <a href="#">
+                <img src="/images/forza-horizon-5.jpg" alt="Forza Horizon 5 cover art">
+                <p>Forza Horizon 5</p>
+              </a>
+            </li>
+            <li class="background">
+              <a href="#">
+                <img src="/images/fifa23.jpg" alt="FIFA 23 cover art">
+                <p>FIFA 23</p>
+              </a>
+            </li>
+            <li class="background" id="last-preview">
+              <a href="#">
+                <img src="/images/god-of-war.jpg" alt="God of War Ragnarök cover art">
+                <p>God of War Ragnarök</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!--START OF MOBILE HTML SECTION-->
+
+    <section>
+      <div class="store-s1-mobile">
+        <h1>Best Sellers</h1>
+        <div class="winter-sale-navigation">
+          <i class="fa-solid fa-chevron-left"></i>
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
+    </section>
+    <section class="store-s2-mobile">
+      <div class="winter-sale-elements">
+        <a href="/products/deadspace.html">
+          <img src="/images/deadspace.jpg" alt="Dead Space cover art">
+        </a>
+        <p>Dead Space</p>
+      </div>
+      <div class="winter-sale-elements">
+        <a href="#">
+          <img src="/images/gtav.jpg" alt="Grand Theft Auto V cover art">
+        </a>
+        <p>Grand Theft Auto: V</p>
+      </div>
+      <div class="winter-sale-elements">
+        <a href="#">
+          <img src="/images/mw2.jpg" alt="Modern Warfare 2 cover art">
+        </a>
+        <p>Modern Warfare 2</p>
+      </div>
+      <div class="winter-sale-elements">
+        <a href="#">
+          <img src="/images/forza-horizon-5.jpg" alt="Forza Horizon 5 cover art">
+        </a>
+        <p>Forza Horizon 5</p>
+      </div>
+      <div class="winter-sale-elements">
+        <a href="#">
+          <img src="/images/fifa23.jpg" alt="FIFA 23 cover art">
+        </a>
+        <p>FIFA 23</p>
+      </div>
+      <div class="winter-sale-elements">
+        <a href="#">
+          <img src="/images/god-of-war.jpg" alt="God of War Ragnarök cover art">
+        </a>
+        <p>God of War Ragnarök</p>
+      </div>
+    </section>
+
+    <!--END OF MOBILE HTML SECTION-->
+
+    <section id="winter-sale">
+      <h2>Winter Sale</h2>
+      <div class="winter-sale-navigation">
+        <i class="fa-solid fa-chevron-left"></i>
+        <i class="fa-solid fa-chevron-right"></i>
+      </div>
+    </section>
+    <section class="winter-sale-flex-row">
+      <div class="winter-sale-elements">
+        <a href="#">
+          <img src="/images/spiderman.jpg" alt="Spider-Man Remastered cover art">
+        </a>
+        <p>Marvel's Spider-Man<br>Remastered</p>
+        <div class="flex-row">
+          <p class="discount-percentage">-30%</p>
+          <div class="prices">
+            <p class="discount" style="text-decoration: line-through">
+              NOK 599
+            </p>
+            <p>NOK 419.30</p>
+          </div>
+        </div>
+      </div>
+      <div class="winter-sale-elements">
+        <a href="#">
+          <img src="/images/cyberpunk.jpeg" alt="Cyberpunk 2077 cover art">
+        </a>
+        <p>Cyberpunk 2077<br><br></p>
+        <div class="flex-row">
+          <p class="discount-percentage">-50%</p>
+          <div class="prices">
+            <p class="discount" style="text-decoration: line-through">
+              NOK 599
+            </p>
+            <p>NOK 299.50</p>
+          </div>
+        </div>
+      </div>
+      <div class="winter-sale-elements">
+        <a href="#">
+          <img src="/images/dirt5.jpg" alt="Dirt 5 cover art">
+        </a>
+        <p>Dirt 5<br><br></p>
+        <div class="flex-row">
+          <p class="discount-percentage">-60%</p>
+          <div class="prices">
+            <p class="discount" style="text-decoration: line-through">
+              NOK 599
+            </p>
+            <p>NOK 239.60</p>
+          </div>
+        </div>
+      </div>
+      <div class="winter-sale-elements">
+        <a href="#">
+          <img src="/images/halo.jpg" alt="Halo Infinite cover art">
+        </a>
+        <p>Halo Infinite<br><br></p>
+        <div class="flex-row">
+          <p class="discount-percentage">-20%</p>
+          <div class="prices">
+            <p class="discount" style="text-decoration: line-through">
+              NOK 599
+            </p>
+            <p>NOK 479.20</p>
+          </div>
+        </div>
+      </div>
+      <div class="winter-sale-elements">
+        <a href="#">
+          <img src="/images/minecraft.jpg" alt="Minecraft cover art">
+        </a>
+        <p>Minecraft<br><br></p>
+        <div class="flex-row">
+          <p class="discount-percentage">-20%</p>
+          <div class="prices">
+            <p class="discount" style="text-decoration: line-through">
+              NOK 269
+            </p>
+            <p>NOK 215.20</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <section>
+    <div class="container-sell-game">
+      <h2 class="commando">HAVE A GAME YOU WANT TO SELL?</h2>
+      <p>We give you at least NOK 100*</p>
+      <p>Fill out this form and we'll get back to you with a valuation of your games</p>
+      <form action="mailto:valuation@gamehub.no" method="POST" name="email-form" enctype="text/plain"
+        class="contact-form">
+        <div class="label-input-row">
+          <label for="first-name" class="form-labels">First Name:</label>
+          <input type="text" name="First name" id="first-name">
+        </div>
+        <div class="label-input-row">
+          <label for="last-name" class="form-labels">Last Name:</label>
+          <input type="text" name="Last name" id="last-name">
+        </div>
+        <div class="label-input-row">
+          <label for="email" class="form-labels">Email:</label>
+          <input type="text" name="Email" id="email">
+        </div>
+        <div class="label-input-row">
+          <label for="sell-games" class="form-labels">Games you want to sell:</label>
+          <input type="text" name="Games you want to sell" id="sell-game">
+        </div>
+        <input type="submit" value="Send" class="send-button">
+      </form>
+      <p class="smaller-p-text">*Some titles might be worth less</p>
+    </div>
+  </section>
+  <footer class="extended-footer">
+    <div class="row">
+      <div class="container-connect-with-us">
+        <ul>
+          <li>
+            <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-square-youtube"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+          </li>
+        </ul>
+      </div>
+      <div class="go-to-top">
+        <a href="store.html"><i class="fa-solid fa-arrow-up"></i></a>
+      </div>
+    </div>
+    <div class="row-center-1">
+      <div class="footer-list">
+        <ul>
+          <li class="bigger-font">Our Products</li>
+          <li><a href="#">Deals</a></li>
+          <li><a href="#">Gift Cards</a></li>
+          <li><a href="#">Pre-Owned</a></li>
+          <li>
+            <a href="#">Playstation&reg;</a> |
+            <a href="#">Xbox&reg;</a>
+          </li>
+          <li>
+            <a>Nintendo&reg;</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-list">
+        <ul>
+          <li class="bigger-font">Support</li>
+          <li><a href="#">Help</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="#">Delivery</a></li>
+          <li><a href="#">Order Tracking</a></li>
+          <li><a href="#">Returns</a></li>
+        </ul>
+      </div>
+      <div class="footer-list">
+        <ul>
+          <li class="bigger-font">About</li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Cookies</a></li>
+          <li><a href="#">Copyright</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row-center-2">
+      <div class="container-copyright">
+        <p>&copy; 2023 GameHub</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

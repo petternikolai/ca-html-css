@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="The cart page of GameHub" />
+    <script src="https://kit.fontawesome.com/f2ebdb1586.js" crossorigin="anonymous"></script>
+    <link href="css/styles.css" rel="stylesheet" />
+    <title>GameHub | Cart</title>
+</head>
+
+<body id="store">
+    <header>
+        <input type="checkbox" id="menu-checkbox">
+        <label for="menu-checkbox" class="hamburger-icon"><i class="fas fa-bars"></i></label>
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="store.html">STORE</a>
+            <a href="about.html">ABOUT</a>
+            <a href="contact.html">CONTACT</a>
+        </nav>
+        <form action="/" method="GET" class="form">
+            <input type="search" placeholder="Search store" class="search-field">
+            <button class="search-button">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </form>
+        <a href="#" id="magnifying-glass-icon"><i class="fa-solid fa-magnifying-glass"></i></a>
+        <a href="cart.html" id="shopping-cart-icon"><i class="fa-solid fa-cart-shopping"></i></a>
+    </header>
+    <main>
+        <h1>My Cart</h1>
+        <div class="grid">
+            <div class="col">
+                <p>Item</p>
+            </div>
+            <div class="col">
+                <p>Info</p>
+            </div>
+            <div class="col">
+                <p>Quantity</p>
+            </div>
+            <div class="col">
+                <p>Price</p>
+            </div>
+            <div class="col">
+                <p>Remove from cart</p>
+            </div>
+            <div class="col">
+                <img src="/images/deadspace.jpg" alt="Dead Space cover art" id="cart-picture">
+            </div>
+            <div class="col">
+                <h4>Dead Space</h4>
+                <p>Article number: 978567</p>
+                <p><i class="fa-solid fa-circle"></i> 50+ in stock</p>
+            </div>
+            <div class="col">
+                <div id="quantity">
+                    <p><a href="#" class="decrease">-</a></p>
+                    <p>1</p>
+                    <p><a href="#" class="increase">+</a></p>
+                </div>
+            </div>
+            <div class="col">
+                <p>449.25,-</p>
+            </div>
+            <div class="col">
+                <a href="#"><i class="fa-solid fa-xmark"></i></a>
+            </div>
+            <div class="col">
+                <p>VAT</p>
+            </div>
+            <div class="col">
+                <p>25%</p>
+            </div>
+            <div class="col">
+                <p>1</p>
+            </div>
+            <div class="col">
+                <p>149.75,-</p>
+            </div>
+            <div class="col"></div>
+            <div class="col-second-last">
+                <p>NOK 599</p>
+            </div>
+            <div class="col-last">
+                <a href="checkout.html" class="checkout-button">Checkout</a>
+            </div>
+        </div>
+    </main>
+    <div class="spacer"></div>
+    <footer class="extended-footer">
+        <div class="row">
+            <div class="container-connect-with-us">
+                <p>CONNECT WITH US</p>
+                <ul>
+                    <li>
+                        <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-brands fa-square-youtube"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="go-to-top">
+                <a href="cart.html"><i class="fa-solid fa-arrow-up"></i></a>
+            </div>
+        </div>
+        <div class="row-center-1">
+            <div class="footer-list">
+                <ul>
+                    <li class="bigger-font">Our Products</li>
+                    <li><a href="#">Deals</a></li>
+                    <li><a href="#">Gift Cards</a></li>
+                    <li><a href="#">Pre-Owned</a></li>
+                    <li>
+                        <a href="#">Playstation&reg;</a> |
+                        <a href="#">Xbox&reg;</a>
+                    </li>
+                    <li>
+                        <a>Nintendo&reg;</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-list">
+                <ul>
+                    <li class="bigger-font">Support</li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="#">Delivery</a></li>
+                    <li><a href="#">Order Tracking</a></li>
+                    <li><a href="#">Returns</a></li>
+                </ul>
+            </div>
+            <div class="footer-list">
+                <ul>
+                    <li class="bigger-font">About</li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Cookies</a></li>
+                    <li><a href="#">Copyright</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row-center-2">
+            <div class="container-copyright-alternative">
+                <p>&copy; 2023 GameHub</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
