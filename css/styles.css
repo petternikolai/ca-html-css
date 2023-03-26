@@ -323,7 +323,7 @@ input {
 .game-preview-large img {
     width: 100%;
     max-width: 1000px;
-    height: 544px;
+    height: auto;
     border-radius: 10px;
 }
 
