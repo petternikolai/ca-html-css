@@ -802,6 +802,117 @@ input {
     padding: 20px 0 20px 0;
 }
 
+/* --------------- Checkout -----------------*/
+
+.two-col-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.container-checkout-steps {
+    width: 100%;
+    max-width: 600px;
+    background-color: rgb(11, 11, 11, 0.7);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+.heading {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin: 0 0 20px 0;
+    padding-bottom: 10px;
+    border-bottom: solid white 0.5px;
+}
+
+.heading p {
+    margin: auto 0;
+}
+
+.circle {
+    background-color: #de35ff;
+    padding: 5px 10px;
+    border-radius: 50%;
+}
+
+.delivery-info-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.delivery-info-form input {
+    width: 100%;
+    max-width: 230px;
+}
+
+.zip-city-row {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.zip-input {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 70px;
+}
+
+.city-input {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 130px;
+}
+
+.delivery-method-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.radio {
+    width: fit-content;
+    text-align: left;
+    margin-right: 10px;
+}
+
+input#vipps.radio {
+    display: table-cell;
+    vertical-align: middle;
+    margin-bottom: 22.5px;
+    margin-right: 0;
+}
+
+.less-margin {
+    margin-top: -15px;
+}
+
+#vipps-logo {
+    width: 100%;
+    max-width: 80px;
+    height: auto;
+    margin: auto 0;
+}
+
+.add-left-margin {
+    margin-left: 20px;
+}
+
+.cta-pay-now {
+    display: block;
+    background-color: #de35ff;
+    padding: 20px 0;
+    width: 100%;
+    max-width: 100px;
+    text-align: center;
+    margin: 20px 0 20px 20px;
+    border-radius: 10px;
+}
+
 /* ------------------ Footer ------------------- */
 
 footer {

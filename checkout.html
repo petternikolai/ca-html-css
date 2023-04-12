@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dead Space Product Page">
+    <script src="https://kit.fontawesome.com/f2ebdb1586.js" crossorigin="anonymous"></script>
+    <link href="/css/styles.css" rel="stylesheet">
+    <title>GameHub | Dead Space</title>
+</head>
+
+<body id="store">
+    <header>
+        <input type="checkbox" id="menu-checkbox">
+        <label for="menu-checkbox" class="hamburger-icon"><i class="fas fa-bars"></i></label>
+        <nav>
+            <a href="../index.html">HOME</a>
+            <a href="../store.html">STORE</a>
+            <a href="../about.html">ABOUT</a>
+            <a href="../contact.html">CONTACT</a>
+        </nav>
+        <form action="/" method="GET" class="form">
+            <input type="search" placeholder="Search store" class="search-field">
+            <button class="search-button">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </form>
+        <a href="#" id="magnifying-glass-icon"><i class="fa-solid fa-magnifying-glass"></i></a>
+        <a href="../cart.html" id="shopping-cart-icon"><i class="fa-solid fa-cart-shopping"></i></a>
+    </header>
+    <main>
+        <div class="two-col-row">
+            <div class="col-1">
+                <div class="container-checkout-steps">
+                    <div class="heading">
+                        <p class="circle">1</p>
+                        <p>Delivery Information</p>
+                    </div>
+                    <form class="delivery-info-form">
+                        <label for="name">Name</label>
+                        <input type="text" id="name">
+                        <label for="street">Street</label>
+                        <input type="text" id="street">
+                        <div class="zip-city-row">
+                            <div class="zip-input">
+                                <label for="zip">Zip Code</label>
+                                <input type="text" id="zip">
+                            </div>
+                            <div class="city-input">
+                                <label for="city">City</label>
+                                <input type="text" id="city">
+                            </div>
+                        </div>
+                        <label for="email">Email</label>
+                        <input type="text" id="email">
+                        <label for="phone">Phone</label>
+                        <input type="text" id="phone">
+                    </form>
+                </div>
+                <div class="container-checkout-steps">
+                    <div class="heading">
+                        <p class="circle">2</p>
+                        <p>Delivery Method</p>
+                    </div>
+                    <form class="delivery-method-form">
+                        <div>
+                            <input type="radio" id="download" class="radio" name="radio">
+                            <label for="download">Download</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="home-delivery" class="radio" name="radio">
+                            <label for="home-delivery">Home Delivery with Posten</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="home-delivery" class="radio" name="radio">
+                            <label for="home-delivery">Home Delivery with PostNord</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="home-delivery" class="radio" name="radio">
+                            <label for="home-delivery">Home Delivery with HeltHjem</label>
+                        </div>
+                    </form>
+                </div>
+                <div class="container-checkout-steps">
+                    <div class="heading">
+                        <p class="circle">3</p>
+                        <p>Payment Method</p>
+                    </div>
+                    <form class="delivery-method-form">
+                        <div>
+                            <input type="radio" id="invoice" class="radio" name="radio">
+                            <label for="invoice">Invoice 14 days (0,00)</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="home-delivery" class="radio" name="radio">
+                            <label for="home-delivery">Pay in 3 months (from 259,00)</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="home-delivery" class="radio" name="radio">
+                            <label for="home-delivery">Pay over time (from 59,00 per month)</label>
+                        </div>
+                        <div class="vipps">
+                            <input type="radio" id="vipps" class="radio" name="radio">
+                            <label for="vipps"><img src="/images/vipps-rgb-orange-pos.png" alt="Vipps logo"
+                                    id="vipps-logo"></label>
+                        </div>
+                        <div class="less-margin">
+                            <input type="radio" id="home-delivery" class="radio" name="radio">
+                            <label for="home-delivery">Card</label>
+                        </div>
+                        <br>
+                        <div>
+                            <input type="checkbox" id="giftcard" class="radio">
+                            <label for="giftcard">Use gift card</label>
+                        </div>
+                    </form>
+                </div>
+                <form class="delivery-method-form">
+                    <div class="add-left-margin">
+                        <input type="checkbox" id="newsletter" class="radio">
+                        <label for="newsletter">Subscribe to our newsletter</label>
+                    </div>
+                    <div class="add-left-margin">
+                        <input type="checkbox" id="terms-conditions" class="radio">
+                        <label for="terms-conditions">I agree to the <span style="color: #de35ff;">Terms &
+                                Conditions</span></label>
+                    </div>
+                </form>
+                <a href="/checkout-success.html" class="cta-pay-now">Pay Now</a>
+            </div>
+            <div class="col-2">
+
+            </div>
+        </div>
+    </main>
+    <footer class="extended-footer">
+        <div class="row">
+            <div class="container-connect-with-us">
+                <ul>
+                    <li>
+                        <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-brands fa-square-youtube"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="go-to-top">
+                <a href="../store.html"><i class="fa-solid fa-arrow-up"></i></a>
+            </div>
+        </div>
+        <div class="row-center-1">
+            <div class="footer-list">
+                <ul>
+                    <li class="bigger-font">Our Products</li>
+                    <li><a href="#">Deals</a></li>
+                    <li><a href="#">Gift Cards</a></li>
+                    <li><a href="#">Pre-Owned</a></li>
+                    <li>
+                        <a href="#">Playstation&reg;</a> |
+                        <a href="#">Xbox&reg;</a>
+                    </li>
+                    <li>
+                        <a>Nintendo&reg;</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-list">
+                <ul>
+                    <li class="bigger-font">Support</li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="../contact.html">Contact Us</a></li>
+                    <li><a href="#">Delivery</a></li>
+                    <li><a href="#">Order Tracking</a></li>
+                    <li><a href="#">Returns</a></li>
+                </ul>
+            </div>
+            <div class="footer-list">
+                <ul>
+                    <li class="bigger-font">About</li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Cookies</a></li>
+                    <li><a href="#">Copyright</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row-center-2">
+            <div class="container-copyright">
+                <p>&copy; 2023 GameHub</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
