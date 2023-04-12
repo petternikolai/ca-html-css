@@ -327,6 +327,12 @@ input {
     border-radius: 10px;
 }
 
+.game-preview-large img:hover {
+    transition: .5s ease;
+    backface-visibility: hidden;
+    opacity: 0.3;
+}
+
 .game-preview-small ul {
     list-style: none;
     margin: 0;
@@ -679,7 +685,122 @@ input {
     background-color: #de35ff;
 }
 
+/* ------------------ Dead Space Product Page --------------------*/
 
+.no-bottom-margin {
+    margin-bottom: 0;
+}
+
+.rating {
+    display: flex;
+    flex-direction: row;
+    margin: auto 0;
+    gap: 5px;
+}
+
+.rating i {
+    margin: auto 0;
+    color: #de35ff;
+    font-size: 1.25rem;
+}
+
+.product-page-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.main-content,
+.main-content img {
+    width: 100%;
+    max-width: 1000px;
+    border-radius: 10px;
+}
+
+.top-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.product-info {
+    background-color: #0b0b0b;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.pegi-container {
+    display: flex;
+    flex-direction: row;
+    border: solid white 1px;
+    padding: 20px;
+    gap: 20px;
+}
+
+.pegi-img img {
+    width: 100%;
+    height: auto;
+    max-width: 70px;
+}
+
+.pegi-info {
+    text-align: left;
+    margin: auto 0 auto 0;
+}
+
+.genre-features-container {
+    margin: auto 0 auto 0;
+}
+
+.add-to-cart-sticky {
+    position: sticky;
+    top: 190px;
+    width: 100%;
+    max-width: 300px;
+    margin: 110px 0 0 40px;
+    text-align: center;
+    padding: 20px;
+    background-color: #0b0b0b;
+    height: fit-content;
+    border-radius: 10px;
+}
+
+.extra-large-p {
+    font-size: 2rem;
+}
+
+.left-list,
+.left-list ul {
+    color: grey;
+    list-style: none;
+    text-align: left;
+    padding: 0;
+}
+
+.right-list,
+.right-list ul {
+    list-style: none;
+    text-align: left;
+    padding: 0;
+}
+
+.left-list li,
+.right-list li {
+    margin: 10px 0 0 0;
+}
+
+.cta-add-to-cart {
+    display: block;
+    border: solid white 1px;
+    padding: 20px 0 20px 0;
+}
+
+.cta-added-to-cart {
+    display: block;
+    background-color: green;
+    padding: 20px 0 20px 0;
+}
 
 /* ------------------ Footer ------------------- */
 
