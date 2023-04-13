@@ -36,7 +36,7 @@
                 <div class="container-checkout-steps">
                     <div class="heading">
                         <p class="circle">1</p>
-                        <p>Delivery Information</p>
+                        <h2>Delivery Information</h2>
                     </div>
                     <form class="delivery-info-form">
                         <label for="name">Name</label>
@@ -62,31 +62,31 @@
                 <div class="container-checkout-steps">
                     <div class="heading">
                         <p class="circle">2</p>
-                        <p>Delivery Method</p>
+                        <h2>Delivery Method</h2>
                     </div>
                     <form class="delivery-method-form">
                         <div>
                             <input type="radio" id="download" class="radio" name="radio">
-                            <label for="download">Download</label>
+                            <label for="download">Download (Instant delivery to your e-mail)</label>
                         </div>
                         <div>
                             <input type="radio" id="home-delivery" class="radio" name="radio">
-                            <label for="home-delivery">Home Delivery with Posten</label>
+                            <label for="home-delivery">Home Delivery with Posten (from 59,00)</label>
                         </div>
                         <div>
                             <input type="radio" id="home-delivery" class="radio" name="radio">
-                            <label for="home-delivery">Home Delivery with PostNord</label>
+                            <label for="home-delivery">Home Delivery with PostNord (from 69,00)</label>
                         </div>
                         <div>
                             <input type="radio" id="home-delivery" class="radio" name="radio">
-                            <label for="home-delivery">Home Delivery with HeltHjem</label>
+                            <label for="home-delivery">Home Delivery with HeltHjem (from 59,00)</label>
                         </div>
                     </form>
                 </div>
                 <div class="container-checkout-steps">
                     <div class="heading">
                         <p class="circle">3</p>
-                        <p>Payment Method</p>
+                        <h2>Payment Method</h2>
                     </div>
                     <form class="delivery-method-form">
                         <div>
@@ -131,7 +131,31 @@
                 <a href="/checkout-success.html" class="cta-pay-now">Pay Now</a>
             </div>
             <div class="col-2">
-
+                <h2>ORDER SUMMARY</h2>
+                <div class="product-row">
+                    <img src="/images/deadspace.jpg" alt="Dead Space cover art">
+                    <ul>
+                        <li>Dead Space</li>
+                        <li>Article number: 978567</li>
+                        <li><i class="fa-solid fa-circle"></i> 50+ in stock</li>
+                    </ul>
+                    <p>599,00</p>
+                </div>
+                <div class="order-details">
+                    <p class="bottom-border">Order details</p>
+                    <div class="product-row" id="product-row">
+                        <ul>
+                            <li>Discount</li>
+                            <li>Delivery</li>
+                            <li>Total</li>
+                        </ul>
+                        <ul class="right-align">
+                            <li>0,00</li>
+                            <li>0,00</li>
+                            <li>599,00</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
