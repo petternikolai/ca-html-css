@@ -12,15 +12,35 @@
 </head>
 
 <body id="checkout-success">
-    <div class="success-container">
-        <i class="fa-solid fa-check"></i>
-        <h1 class="commando">Thank You</h1>
-        <h2>Your Order Was Confirmed</h2>
-        <h3>Order ID: 2345678</h3>
-        <p>We have sent your order confirmation and invoice to <span style="color: #de35ff; font-weight: bold;">youremail@gmail.com</span></p>
-        <img src="/images/astronaut-salute.jpg" alt="Astronaut holding a beer on the moon">
-        <a href="store.html" class="cta-continue">Continue Shopping</a>
-    </div>
+    <header>
+        <input type="checkbox" id="menu-checkbox">
+        <label for="menu-checkbox" class="hamburger-icon"><i class="fas fa-bars"></i></label>
+        <nav>
+            <a href="../index.html">HOME</a>
+            <a href="../store.html">STORE</a>
+            <a href="../about.html">ABOUT</a>
+            <a href="../contact.html">CONTACT</a>
+        </nav>
+        <form action="/" method="GET" class="form">
+            <input type="search" placeholder="Search store" class="search-field">
+            <button class="search-button">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </form>
+        <a href="#" id="magnifying-glass-icon"><i class="fa-solid fa-magnifying-glass"></i></a>
+        <a href="../cart.html" id="shopping-cart-icon"><i class="fa-solid fa-cart-shopping"></i></a>
+    </header>
+    <main>
+        <div class="success-container">
+            <i class="fa-solid fa-check"></i>
+            <h1>Your order was confirmed!</h1>
+            <h2>Order ID: 2345678</h2>
+            <p>We have sent your order confirmation and invoice to <span
+                    style="color: #de35ff; font-weight: bold;">youremail@gmail.com</span></p>
+            <img src="/images/astronaut-salute.jpg" alt="Astronaut holding a beer on the moon">
+            <a href="store.html" class="cta-continue">Continue Shopping</a>
+        </div>
+    </main>
 </body>
 
 </html>

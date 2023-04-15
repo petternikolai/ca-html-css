@@ -1,13 +1,13 @@
 @font-face {
     font-family: "Commando";
-    src: url(../fonts/commando.ttf) format("ttf");
+    src: local("Commando"), 
+        url(../fonts/commando.ttf) format("TrueType");
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 html, body {
-    max-width: 100%;
-    min-height: 100vh;
+    height: auto;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
@@ -207,34 +207,26 @@ input {
     text-align: center;
 }
 
-#bg-1 {
+
+.bg {
     background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(/images/games-bg.jpg);
     background-size: cover;
-    background-position: top;
     padding: 12.5% 30%;
     border-radius: 10px;
     font-size: 30px;
     font-weight: 100;
+}
+
+#bg-1 {
+    background-position: top;
 }
 
 #bg-2 {
-    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(/images/games-bg.jpg);
-    background-size: cover;
     background-position: center;
-    padding: 12.5% 30%;
-    border-radius: 10px;
-    font-size: 30px;
-    font-weight: 100;
 }
 
 #bg-3 {
-    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(/images/games-bg.jpg);
-    background-size: cover;
     background-position: bottom;
-    padding: 12.5% 30%;
-    border-radius: 10px;
-    font-size: 30px;
-    font-weight: 100;
 }
 
 #bg-1 a:hover,
@@ -467,8 +459,7 @@ input {
     display: flex;
     flex-direction: column;
     background-color: rgb(11, 11, 11, 0.5);
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin: 5% 0 5% 0;
     padding: 20px;
     text-align: center;
     border-radius: 10px;
@@ -906,9 +897,8 @@ input#vipps.radio {
     background-color: #de35ff;
     padding: 20px 0;
     width: 100%;
-    max-width: 100px;
     text-align: center;
-    margin: 20px 0 20px 20px;
+    margin: 20px 0 0 0;
     border-radius: 10px;
 }
 
@@ -928,9 +918,29 @@ input#vipps.radio {
 .product-row {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 50px;
+}
+
+.product-row-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.product-row-2 ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    margin: 0;
+}
+
+#product-row-2 {
+    margin-bottom: 0;
+    padding-bottom: 15px;
+    border-bottom: dashed rgb(255, 255, 255, 0.5) 1px;
+    width: 100%;
 }
 
 #product-row {
@@ -1018,8 +1028,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 0 10%;
-    padding: 1% 0;
+    margin: 20px 10%;
     bottom: 0;
 }
 
@@ -1037,7 +1046,7 @@ footer {
 }
 
 .container-copyright p {
-    margin: 10px auto 0 auto;
+    margin: 0 auto;
     font-weight: 100;
 }
 
@@ -1052,6 +1061,27 @@ footer {
 }
 
 .container-connect-with-us ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    font-size: 30px;
+}
+
+.container-connect-with-us-1 {
+    width: 100%;
+    max-width: 200px;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.container-connect-with-us-1 p {
+    margin: 0 0 5% 0;
+}
+
+.container-connect-with-us-1 ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -1076,17 +1106,15 @@ i:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 0 10% 1% 10%;
+    margin: 10px 10%;
 }
 
 .row-center-1 {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: center;
     gap: 10%;
-    margin: 0 10% 1% 10%;
-    padding: 1% 0 1% 0;
+    margin: 0 10%;
     border-top: solid rgba(255, 255, 255, 0.429) 1px;
     border-bottom: solid rgba(255, 255, 255, 0.429) 1px;
 }
@@ -1096,6 +1124,7 @@ i:hover {
     flex-direction: row;
     justify-content: center;
     gap: 10%;
+    margin: 10px 10%;
 }
 
 .footer-list ul {
@@ -1103,6 +1132,10 @@ i:hover {
     margin: 0;
     padding: 0;
     text-align: center;
+}
+
+.footer-list li {
+    margin: 10px 0;
 }
 
 .footer-list a:hover {
@@ -1120,49 +1153,16 @@ i:hover {
 
 /* --------------- Breakpoints ------------------ */
 
-@media only screen and (max-width: 2560px) {
-
-    .hamburger-icon {
-        margin-left: 20%;
-    }
-
-    #shopping-cart-icon {
-        margin-right: 20%;
-    }
-    
-    main {
-        margin: 80px 20% 0 20%;
-    }
-
-    .container-sell-game {
-        margin: 2.5% 0 0 0;
-    }
-
-    .row {
-        margin: 0 20% 1% 20%;
-    }
-
-    .row-center-1 {
-        margin: 0 20% 1% 20%;
-    }
-}
-
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 992px) {
 
     main {
-        margin: 80px 10% 0 10%;
+        margin: 80px 5% 0 5%;
     }
 
     footer {
         display: flex;
         flex-direction: column-reverse;
         justify-content: center;
-        margin: 0 10%;
-    }
-
-    .row,
-    .row-center-1,
-    .row-center-2 {
         margin: 0 10%;
     }
 
@@ -1216,7 +1216,11 @@ i:hover {
     }
 
     .container-connect-with-us {
-        margin: 0 auto 0 0;
+        margin: 10px auto;
+    }
+
+    .container-copyright {
+        margin-bottom: 10px;
     }
     
 }
@@ -1236,6 +1240,14 @@ i:hover {
         border-right: solid #b22dc98d 1px;
     }
 
+    .hamburger-icon {
+        margin-left: 5%;
+    }
+
+    #shopping-cart-icon {
+        margin-right: 5%;
+    }
+
     .search-field,
     .search-button {
         display: none;
@@ -1252,7 +1264,7 @@ i:hover {
     }
 
     .two-col-row {
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
 
     .col-2 {
@@ -1260,6 +1272,53 @@ i:hover {
         padding: 0;
     }
 
+}
+
+@media only screen and (max-width: 600px) {
+
+    main {
+        margin: 50% 5%;
+    }
+
+    .bg {
+        padding: 10%;
+    }
+
+    .row {
+        margin: 10px 5%;
+    }
+
+    .row-center-1 {
+        flex-direction: column;
+        margin: 0 5%;
+    }
+
+    .row-center-2 {
+        flex-direction: column;
+        margin: 10px 5%;
+    }
+
+    .product-row {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .product-row img,
+    .product-row ul,
+    .product-row p {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .product-row p {
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+   .bg {
+    padding: 8%;
+   }
 }
 
 
