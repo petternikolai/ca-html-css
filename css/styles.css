@@ -1115,7 +1115,7 @@ i:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 10px 5%;
+    margin: 10px 10%;
 }
 
 .row-center-1 {
@@ -1123,7 +1123,7 @@ i:hover {
     flex-direction: row;
     justify-content: center;
     gap: 10%;
-    margin: 0 5%;
+    margin: 0 10%;
     border-top: solid rgba(255, 255, 255, 0.429) 1px;
     border-bottom: solid rgba(255, 255, 255, 0.429) 1px;
 }
@@ -1133,7 +1133,7 @@ i:hover {
     flex-direction: row;
     justify-content: center;
     gap: 10%;
-    margin: 10px 5%;
+    margin: 10px 10%;
 }
 
 .footer-list ul {
@@ -1310,6 +1310,12 @@ i:hover {
 
     #hide {
         display: none;
+    }
+
+    .row,
+    .row-center-1,
+    .row-center-2 {
+        margin: 10px 5%;
     }
 
 }
