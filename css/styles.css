@@ -7,7 +7,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 html, body {
-    height: auto;
+    height: 100vh;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
