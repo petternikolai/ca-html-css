@@ -705,6 +705,11 @@ input {
     justify-content: space-between;
 }
 
+.product-page-row-1 {
+    display: flex;
+    justify-content: space-between;
+}
+
 .main-content,
 .main-content img {
     width: 100%;
