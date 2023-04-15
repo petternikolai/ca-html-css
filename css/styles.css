@@ -903,12 +903,16 @@ input#vipps.radio {
 
 .cta-pay-now {
     display: block;
-    background-color: #de35ff;
+    background-color: #B22DC9;
     padding: 20px 0;
     width: 100%;
     text-align: center;
     margin: 20px 0 0 0;
     border-radius: 10px;
+}
+
+.cta-pay-now:hover {
+    background-color: #de35ff;
 }
 
 .col-1 {
