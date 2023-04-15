@@ -588,11 +588,13 @@ input {
     text-align: center;
     background-color: rgb(11, 11, 11, 0.5);
     padding: 10px;
+    width: auto;
 }
 
 .col {
     align-self: center;
     height: auto;
+    width: 100%;
 }
 
 .col-last {
@@ -1107,7 +1109,7 @@ i:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 10px 10%;
+    margin: 10px 5%;
 }
 
 .row-center-1 {
@@ -1115,7 +1117,7 @@ i:hover {
     flex-direction: row;
     justify-content: center;
     gap: 10%;
-    margin: 0 10%;
+    margin: 0 5%;
     border-top: solid rgba(255, 255, 255, 0.429) 1px;
     border-bottom: solid rgba(255, 255, 255, 0.429) 1px;
 }
@@ -1125,7 +1127,7 @@ i:hover {
     flex-direction: row;
     justify-content: center;
     gap: 10%;
-    margin: 10px 10%;
+    margin: 10px 5%;
 }
 
 .footer-list ul {
@@ -1234,7 +1236,7 @@ i:hover {
         background-color: #0b0b0be7;
         font-size: 1rem;
         top: 80px;
-        left: -50px;
+        left: -80px;
         padding: 50px 200px 50px 10px;
         border-bottom: solid #b22dc98d 1px;
         border-left: solid #b22dc98d 1px;
@@ -1273,9 +1275,44 @@ i:hover {
         padding: 0;
     }
 
+    .product-page-row {
+        flex-direction: column;
+    }
+
+    .product-page-row-1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .top-row {
+        flex-direction: column;
+    }
+
+    .add-to-cart-sticky {
+        margin: 0 0 20px 0;
+        width: auto;
+        max-width: none;
+    }
+
+    .grid {
+        display: flex;
+        flex-direction: column;
+        height: 650px;
+        margin-bottom: 20px;
+    }
+
+    #hide {
+        display: none;
+    }
+
 }
 
 @media only screen and (max-width: 600px) {
+
+    nav a {
+        left: -65px;
+    }
 
     .bg {
         padding: 10%;
