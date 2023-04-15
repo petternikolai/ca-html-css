@@ -983,15 +983,18 @@ input#vipps.radio {
 /* ------------------ Checkout Success -------------*/
 
 #checkout-success {
-    background-color: #0b0b0b;
+    background: linear-gradient(#0b0b0b, rgba(203, 49, 233, 0.1)), url(/images/bg.jpg);
     text-align: center;
 }
 
 .success-container {
+    background-color: #0b0b0b;
+    padding: 20px;
+    border-radius: 10px;
     width: 100%;
     max-width: 500px;
     height: fit-content;
-    margin: auto;
+    margin: 20px auto;
 }
 
 .success-container img {
