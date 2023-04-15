@@ -1276,10 +1276,6 @@ i:hover {
 
 @media only screen and (max-width: 600px) {
 
-    main {
-        margin: 50% 5%;
-    }
-
     .bg {
         padding: 10%;
     }
