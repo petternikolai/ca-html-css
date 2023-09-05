@@ -7,11 +7,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="The store page of GameHub">
   <script src="https://kit.fontawesome.com/f2ebdb1586.js" crossorigin="anonymous"></script>
+  <script defer type="module" src="/js/store.js"></script>
   <link href="css/styles.css" rel="stylesheet">
   <title>GameHub | Store</title>
 </head>
 
 <body id="store">
+  <div class="loader-container">
+  </div>
   <header>
     <input type="checkbox" id="menu-checkbox">
     <label for="menu-checkbox" class="hamburger-icon"><i class="fas fa-bars" aria-hidden="false"></i></label>
@@ -35,55 +38,8 @@
       <h1 class="hide">Best Sellers</h1>
       <div class="store-s1-desktop">
         <div class="game-preview-large">
-          <a href="/products/deadspace.html">
-            <img src="/images/deadspace.jpg" alt="Dead Space cover art">
-          </a>
-          <div class="bottom-left">
-            <p>Out Now</p>
-            <p>
-              The sci-fi survival horror<br>
-              classic returns
-            </p>
-            <p id="button"><a href="/products/deadspace.html">NOK 599</a></p>
-          </div>
         </div>
         <div class="game-preview-small">
-          <ul>
-            <li class="background-active">
-              <img src="/images/deadspace.jpg" alt="Dead Space cover art">
-              <p>Dead Space</p>
-            </li>
-            <li class="background">
-              <a href="#">
-                <img src="/images/gtav.jpg" alt="Grand Theft Auto: V cover art">
-                <p>Grand Theft Auto: V</p>
-              </a>
-            </li>
-            <li class="background">
-              <a href="#">
-                <img src="/images/mw2.jpg" alt="Modern Warfare 2 cover art">
-                <p>Modern Warfare 2</p>
-              </a>
-            </li>
-            <li class="background">
-              <a href="#">
-                <img src="/images/forza-horizon-5.jpg" alt="Forza Horizon 5 cover art">
-                <p>Forza Horizon 5</p>
-              </a>
-            </li>
-            <li class="background">
-              <a href="#">
-                <img src="/images/fifa23.jpg" alt="FIFA 23 cover art">
-                <p>FIFA 23</p>
-              </a>
-            </li>
-            <li class="background" id="last-preview">
-              <a href="#">
-                <img src="/images/god-of-war.jpg" alt="God of War Ragnarök cover art">
-                <p>God of War Ragnarök</p>
-              </a>
-            </li>
-          </ul>
         </div>
       </div>
     </div>
@@ -99,42 +55,6 @@
         </div>
       </div>
       <div class="store-s2-mobile">
-        <div class="winter-sale-elements">
-          <a href="/products/deadspace.html">
-            <img src="/images/deadspace.jpg" alt="Dead Space cover art">
-          </a>
-          <p>Dead Space</p>
-        </div>
-        <div class="winter-sale-elements">
-          <a href="#">
-            <img src="/images/gtav.jpg" alt="Grand Theft Auto V cover art">
-          </a>
-          <p>Grand Theft Auto: V</p>
-        </div>
-        <div class="winter-sale-elements">
-          <a href="#">
-            <img src="/images/mw2.jpg" alt="Modern Warfare 2 cover art">
-          </a>
-          <p>Modern Warfare 2</p>
-        </div>
-        <div class="winter-sale-elements">
-          <a href="#">
-            <img src="/images/forza-horizon-5.jpg" alt="Forza Horizon 5 cover art">
-          </a>
-          <p>Forza Horizon 5</p>
-        </div>
-        <div class="winter-sale-elements">
-          <a href="#">
-            <img src="/images/fifa23.jpg" alt="FIFA 23 cover art">
-          </a>
-          <p>FIFA 23</p>
-        </div>
-        <div class="winter-sale-elements">
-          <a href="#">
-            <img src="/images/god-of-war.jpg" alt="God of War Ragnarök cover art">
-          </a>
-          <p>God of War Ragnarök</p>
-        </div>
       </div>
 
       <!--END OF MOBILE HTML SECTION-->
@@ -147,81 +67,6 @@
         </div>
       </section>
       <div class="winter-sale-flex-row">
-        <div class="winter-sale-elements">
-          <a href="#">
-            <img src="/images/spiderman.jpg" alt="Spider-Man Remastered cover art">
-          </a>
-          <p>Marvel's Spider-Man<br>Remastered</p>
-          <div class="flex-row">
-            <p class="discount-percentage">-30%</p>
-            <div class="prices">
-              <p class="discount" style="text-decoration: line-through">
-                NOK 599
-              </p>
-              <p>NOK 419.30</p>
-            </div>
-          </div>
-        </div>
-        <div class="winter-sale-elements">
-          <a href="#">
-            <img src="/images/cyberpunk.jpeg" alt="Cyberpunk 2077 cover art">
-          </a>
-          <p>Cyberpunk 2077<br><br></p>
-          <div class="flex-row">
-            <p class="discount-percentage">-50%</p>
-            <div class="prices">
-              <p class="discount" style="text-decoration: line-through">
-                NOK 599
-              </p>
-              <p>NOK 299.50</p>
-            </div>
-          </div>
-        </div>
-        <div class="winter-sale-elements">
-          <a href="#">
-            <img src="/images/dirt5.jpg" alt="Dirt 5 cover art">
-          </a>
-          <p>Dirt 5<br><br></p>
-          <div class="flex-row">
-            <p class="discount-percentage">-60%</p>
-            <div class="prices">
-              <p class="discount" style="text-decoration: line-through">
-                NOK 599
-              </p>
-              <p>NOK 239.60</p>
-            </div>
-          </div>
-        </div>
-        <div class="winter-sale-elements">
-          <a href="#">
-            <img src="/images/halo.jpg" alt="Halo Infinite cover art">
-          </a>
-          <p>Halo Infinite<br><br></p>
-          <div class="flex-row">
-            <p class="discount-percentage">-20%</p>
-            <div class="prices">
-              <p class="discount" style="text-decoration: line-through">
-                NOK 599
-              </p>
-              <p>NOK 479.20</p>
-            </div>
-          </div>
-        </div>
-        <div class="winter-sale-elements">
-          <a href="#">
-            <img src="/images/minecraft.jpg" alt="Minecraft cover art">
-          </a>
-          <p>Minecraft<br><br></p>
-          <div class="flex-row">
-            <p class="discount-percentage">-20%</p>
-            <div class="prices">
-              <p class="discount" style="text-decoration: line-through">
-                NOK 269
-              </p>
-              <p>NOK 215.20</p>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
     <div class="container-sell-game">
