@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="The cart page of GameHub">
     <script src="https://kit.fontawesome.com/f2ebdb1586.js" crossorigin="anonymous"></script>
+    <script defer type="module" src="/js/cart.js"></script>
     <link href="css/styles.css" rel="stylesheet">
     <title>GameHub | Cart</title>
     <!-- Hotjar Tracking Code for https://celebrated-gnome-9e100a.netlify.app -->
@@ -22,7 +23,9 @@
     </script>
 </head>
 
-<body id="store">
+<body id="cart">
+    <div class="loader-container">
+    </div>
     <header>
         <input type="checkbox" id="menu-checkbox">
         <label for="menu-checkbox" class="hamburger-icon"><i class="fas fa-bars"></i></label>
@@ -59,46 +62,13 @@
             <div class="col hidden">
                 <p>Remove from cart</p>
             </div>
-            <div class="col">
-                <img src="/images/deadspace.jpg" alt="Dead Space cover art" id="cart-picture">
-            </div>
-            <div class="col">
-                <h4>Dead Space</h4>
-                <p>Article number: 978567</p>
-                <p><i class="fa-solid fa-circle"></i> 50+ in stock</p>
-            </div>
-            <div class="col">
-                <div id="quantity">
-                    <p><a href="#" class="decrease">-</a></p>
-                    <p>1</p>
-                    <p><a href="#" class="increase">+</a></p>
-                </div>
-            </div>
-            <div class="col hidden">
-                <p>449.25,-</p>
-            </div>
-            <div class="col hidden">
-                <a href="#"><i class="fa-solid fa-xmark"></i></a>
-            </div>
-            <div class="col hidden">
-                <p>VAT</p>
-            </div>
-            <div class="col hidden">
-                <p>25%</p>
-            </div>
-            <div class="col hidden">
-                <p>1</p>
-            </div>
-            <div class="col hidden">
-                <p>149.75,-</p>
-            </div>
-            <div class="col"></div>
-            <div class="col-second-last">
-                <p>NOK 599</p>
-            </div>
+        </div>
+        <div class="grid">
+            <div class="col-second-last">Subtotal: $0</div>
             <div class="col-last">
-                <a href="checkout.html" class="checkout-button">Checkout</a>
+                <a href="checkout-2.html" class="checkout-button">Checkout</a>
             </div>
+        </div>
         </div>
     </main>
     <div class="spacer"></div>

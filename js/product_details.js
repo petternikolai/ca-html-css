@@ -1,4 +1,5 @@
 import { getGames } from "./getGames.js";
+import { demo } from "./cart.js";
 
 export async function displayProductDetails() {
   try {
@@ -40,7 +41,7 @@ export async function displayProductDetails() {
       </div>
       <div class="add-to-cart-sticky">
         <p class="extra-large-p">$${game.price}</p>
-        <a class="cta-add-to-cart" href="#">ADD TO CART</a>
+        <button data-id="${game.id}" data-title="${game.title}" data-price="${game.price}" data-image="${game.image}" data-description="${game.description}" data-discount="${game.discountedPrice}" href="#">ADD TO CART</button>
         <div class="product-page-row-1">
           <div class="left-list">
             <ul>
@@ -53,7 +54,7 @@ export async function displayProductDetails() {
             <ul>
               <li>${game.genre}</li>
               <li>${game.released}</li>
-              <li>${game.geRating}</li>
+              <li>${game.ageRating}</li>
             </ul>
           </div>
         </div>
@@ -66,4 +67,5 @@ export async function displayProductDetails() {
   }
 }
 
-displayProductDetails();
+await displayProductDetails();
+demo();
