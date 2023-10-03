@@ -167,14 +167,13 @@ function decrementQuantity(itemId) {
   });
   save("cart", updatedCart);
   renderCart();
-  // You may want to call renderCart to update the displayed quantity
 }
 
 function removeItemFromCart(itemId) {
   const cart = load("cart") || [];
-  const updatedCart = cart.filter((item) => item.id !== itemId); // Remove the item
+  const updatedCart = cart.filter((item) => item.id !== itemId);
   save("cart", updatedCart);
-  renderCart(); // Update the cart and subtotal
+  renderCart();
 }
 
 incrementQuantity();
@@ -184,3 +183,13 @@ removeItemFromCart();
 export function isInCart(gameId) {
   return cart.some((item) => item.id === gameId);
 }
+
+document.body.addEventListener("click", function (event) {
+  if (event.target.matches(".checkout-button")) {
+    const cartData = load("cart");
+    if (!cartData || cartData.length === 0) {
+      alert("The cart is empty!");
+      event.preventDefault();
+    }
+  }
+});
