@@ -1,0 +1,89 @@
+/* Add this to your CSS file */
+
+/* Cart Item Styling */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 20px;
+  /* border-bottom: 1px solid #ccc; Add a border between items */
+  padding-bottom: 10px; /* Add some space at the bottom of each item */
+}
+
+.col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2em;
+}
+
+.img-col img {
+  width: 80px; /* Adjust image width */
+  height: 80px; /* Adjust image height */
+  object-fit: cover;
+}
+
+.title-col h4 {
+  font-size: 1.1em;
+  margin: 0;
+}
+
+.quantity-col {
+  display: flex;
+  align-items: center;
+}
+
+.quantity {
+  margin: 0 10px;
+}
+
+.price-col p {
+  font-size: 1.2em;
+  margin: 0;
+}
+
+.remove-col a {
+  color: #e74c3c; /* Use a different color for the remove icon */
+  cursor: pointer;
+}
+
+/* Subtotal Styling */
+.grid-2 {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.col-second-last {
+  font-size: 1.2em;
+}
+
+.checkout-button {
+  margin-left: 20px;
+}
+
+.col-last .checkout-button {
+  padding: 10px 20px;
+  font-size: 1.2em;
+  text-decoration: none;
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.col-last .checkout-button:hover {
+  background-color: #219e49;
+}
+
+/* Add margin to the bottom of the checkout button and subtotal */
+.col-last,
+.col-second-last {
+  margin-bottom: 20px;
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 768px) {
+  
+}

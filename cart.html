@@ -9,6 +9,7 @@
     <script src="https://kit.fontawesome.com/f2ebdb1586.js" crossorigin="anonymous"></script>
     <script defer type="module" src="/js/cart.js"></script>
     <link href="css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/cart-styles.css">
     <title>GameHub | Cart</title>
     <!-- Hotjar Tracking Code for https://celebrated-gnome-9e100a.netlify.app -->
     <script>
@@ -24,8 +25,6 @@
 </head>
 
 <body id="cart">
-    <div class="loader-container">
-    </div>
     <header>
         <input type="checkbox" id="menu-checkbox">
         <label for="menu-checkbox" class="hamburger-icon"><i class="fas fa-bars"></i></label>
@@ -42,7 +41,9 @@
             </button>
         </form>
         <a href="#" id="magnifying-glass-icon"><i class="fa-solid fa-magnifying-glass"></i></a>
-        <a href="cart.html" id="shopping-cart-icon"><i class="fa-solid fa-cart-shopping"></i></a>
+        <a href="cart.html" id="shopping-cart-icon">
+            <i class="fa-solid fa-cart-shopping"></i>
+        </a>
     </header>
     <main>
         <h1>My Cart</h1>
@@ -60,10 +61,10 @@
                 <p>Price</p>
             </div>
             <div class="col hidden">
-                <p>Remove from cart</p>
+
             </div>
         </div>
-        <div class="grid">
+        <div class="grid-2">
             <div class="col-second-last">Subtotal: $0</div>
             <div class="col-last">
                 <a href="checkout-2.html" class="checkout-button">Checkout</a>

@@ -1,5 +1,5 @@
 import { getGames } from "./getGames.js";
-import { demo } from "./cart.js";
+import { demo, isInCart, onAddToCart } from "./cart.js";
 
 export async function displayProductDetails() {
   try {
@@ -9,13 +9,19 @@ export async function displayProductDetails() {
     const queryString = document.location.search;
     const params = new URLSearchParams(queryString);
     const id = params.get("id");
+
     const hideLoading = () => {
       loaderContainer.style.display = "none";
     };
-    hideLoading();
+
     for (let i = 0; i < games.length; i++) {
       const game = games[i];
       if (id === game.id) {
+        const buttonLabel = isInCart(game.id) ? "ADDED TO CART" : "ADD TO CART";
+        const buttonColor = isInCart(game.id) ? "green" : "";
+        const buttonBorder = isInCart(game.id) ? "none" : "";
+        const buttonDisabled = isInCart(game.id) ? "disabled" : "";
+
         productDetailsContainer.innerHTML = `
         <div class="main-content">
         <div>
@@ -28,7 +34,7 @@ export async function displayProductDetails() {
             <i class="fa-solid fa-star-half-stroke"></i>
             <p>4,7</p>
           </div>
-          <img src="${game.image}" alt="${game.description}">
+          <img class="product-details-img" src="${game.image}" alt="${game.description}">
         </div>
         <div class="product-info">
           <div class="top-row">
@@ -41,7 +47,18 @@ export async function displayProductDetails() {
       </div>
       <div class="add-to-cart-sticky">
         <p class="extra-large-p">$${game.price}</p>
-        <button data-id="${game.id}" data-title="${game.title}" data-price="${game.price}" data-image="${game.image}" data-description="${game.description}" data-discount="${game.discountedPrice}" href="#">ADD TO CART</button>
+        <button 
+          id="cartButton" 
+          data-id="${game.id}" 
+          data-title="${game.title}" 
+          data-price="${game.price}" 
+          data-image="${game.image}" 
+          data-description="${game.description}" 
+          data-discount="${game.discountedPrice}" 
+          style="background-color:${buttonColor};border:${buttonBorder}"
+          ${buttonDisabled}>
+          ${buttonLabel}
+        </button>
         <div class="product-page-row-1">
           <div class="left-list">
             <ul>
@@ -59,6 +76,13 @@ export async function displayProductDetails() {
           </div>
         </div>
       </div>`;
+
+        if (!isInCart(game.id)) {
+          const cartButton = document.getElementById("cartButton");
+          cartButton.addEventListener("click", onAddToCart);
+        }
+
+        hideLoading();
       }
     }
   } catch (e) {

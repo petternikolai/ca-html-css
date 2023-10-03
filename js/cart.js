@@ -17,7 +17,7 @@ function remove(key) {
 
 let cart = load("cart") || [];
 
-function onAddToCart(event) {
+export function onAddToCart(event) {
   const button = event.target;
   const id = button.dataset.id;
   const title = button.dataset.title;
@@ -40,6 +40,10 @@ function onAddToCart(event) {
       description,
       quantity: 1,
     });
+    button.innerHTML = "ADDED TO CART";
+    button.style.backgroundColor = "green";
+    button.style.border = "none";
+    button.disabled = true;
   }
   save("cart", cart);
 }
@@ -69,7 +73,7 @@ function renderCart() {
         <p>Price</p>
       </div>
       <div class="col hidden">
-        <p>Remove from cart</p>
+    
       </div>`;
 
     const itemsInCart = JSON.parse(localStorage.getItem("cart"));
@@ -153,8 +157,6 @@ function incrementQuantity(itemId) {
   renderCart();
 }
 
-incrementQuantity();
-
 function decrementQuantity(itemId) {
   const cart = load("cart") || [];
   const updatedCart = cart.map((item) => {
@@ -168,8 +170,6 @@ function decrementQuantity(itemId) {
   // You may want to call renderCart to update the displayed quantity
 }
 
-decrementQuantity();
-
 function removeItemFromCart(itemId) {
   const cart = load("cart") || [];
   const updatedCart = cart.filter((item) => item.id !== itemId); // Remove the item
@@ -177,4 +177,10 @@ function removeItemFromCart(itemId) {
   renderCart(); // Update the cart and subtotal
 }
 
+incrementQuantity();
+decrementQuantity();
 removeItemFromCart();
+
+export function isInCart(gameId) {
+  return cart.some((item) => item.id === gameId);
+}
