@@ -52,6 +52,10 @@ a {
   text-decoration: none;
 }
 
+li {
+  list-style: none;
+}
+
 .no-margin {
   margin: 0;
 }
@@ -1330,6 +1334,10 @@ i:hover {
     max-width: 100%; /* Adjust as needed */
   }
 
+  .product-row {
+    flex-direction: row;
+  }
+
   .product-page-row {
     flex-direction: column;
   }
@@ -1414,7 +1422,7 @@ i:hover {
   }
 
   .product-row {
-    flex-direction: column;
+    flex-direction: row;
     gap: 20px;
   }
 
@@ -1422,7 +1430,6 @@ i:hover {
   .product-row ul,
   .product-row p {
     text-align: center;
-    margin: 0 auto;
   }
 
   .product-row p {
@@ -1430,8 +1437,13 @@ i:hover {
   }
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 433px) {
   .bg {
     padding: 8%;
+  }
+
+  .product-row {
+    flex-direction: column;
+    gap: 20px;
   }
 }
