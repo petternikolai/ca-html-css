@@ -1,6 +1,3 @@
-import { getGames } from "./getGames.js";
-import { displayProductDetails } from "./product_details.js";
-
 function save(key, value) {
   const encodedValue = JSON.stringify(value);
   localStorage.setItem(key, encodedValue);
