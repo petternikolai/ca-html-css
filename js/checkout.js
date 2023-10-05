@@ -19,8 +19,11 @@ if (cartData && cartData.length > 0 && cartContainer) {
     const itemQuantity = document.createElement("li");
     itemQuantity.textContent = `Quantity: ${item.quantity}`;
 
+    const actualPrice =
+      item.discountedPrice < item.price ? item.discountedPrice : item.price;
+
     const itemPrice = document.createElement("p");
-    itemPrice.textContent = `$${item.price}`;
+    itemPrice.textContent = `$${actualPrice.toFixed(2)}`;
 
     itemInfo.appendChild(itemName);
     cartItem.appendChild(itemImage);
@@ -30,7 +33,7 @@ if (cartData && cartData.length > 0 && cartContainer) {
 
     cartContainer.appendChild(cartItem);
 
-    const itemSubtotal = item.price * item.quantity;
+    const itemSubtotal = actualPrice * item.quantity;
     subtotal += itemSubtotal;
   });
 
