@@ -21,6 +21,10 @@ export async function displayProductDetails() {
         const buttonColor = isInCart(game.id) ? "green" : "";
         const buttonBorder = isInCart(game.id) ? "none" : "";
         const buttonDisabled = isInCart(game.id) ? "disabled" : "";
+        const priceHTML =
+          game.discountedPrice < game.price
+            ? `<span class="strikethrough">${game.price}</span> $${game.discountedPrice}`
+            : `${game.price}`;
 
         productDetailsContainer.innerHTML = `
         <div class="main-content">
@@ -46,7 +50,7 @@ export async function displayProductDetails() {
         </div>
       </div>
       <div class="add-to-cart-sticky">
-        <p class="extra-large-p">$${game.price}</p>
+        <p class="extra-large-p">$${priceHTML}</p>
         <button 
           id="cartButton" 
           data-id="${game.id}" 

@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/f2ebdb1586.js" crossorigin="anonymous"></script>
   <link href="css/styles.css" rel="stylesheet">
+  <script defer type="module" src="/js/cart.js"></script>
   <title>GameHub | Home</title>
   <!-- Hotjar Tracking Code for https://celebrated-gnome-9e100a.netlify.app -->
   <script>
@@ -40,8 +41,10 @@
     <a href="store.html" id="magnifying-glass-icon"
       aria-label="Magnifying glass icon. Click this to search the store"><i
         class="fa-solid fa-magnifying-glass"></i></a>
-    <a href="cart.html" id="shopping-cart-icon" aria-label="Shopping cart icon. Click this to view your shopping cart">
+    <a href="/cart.html" id="shopping-cart-container"
+      aria-label="Shopping cart icon. Click this to view your shopping cart">
       <i class="fa-solid fa-cart-shopping"></i>
+      <span class="cart-count">0</span>
     </a>
   </header>
   <main>

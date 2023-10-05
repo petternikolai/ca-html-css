@@ -8,6 +8,7 @@
     <meta name="description" content="The contact page of GameHub">
     <link href="/css/styles.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/f2ebdb1586.js" crossorigin="anonymous"></script>
+    <script defer type="module" src="/js/cart.js"></script>
     <title>GameHub | Contact</title>
     <!-- Hotjar Tracking Code for https://celebrated-gnome-9e100a.netlify.app -->
     <script>
@@ -41,9 +42,10 @@
         <a href="store.html" id="magnifying-glass-icon"
             aria-label="Magnifying glass icon. Click this to search the store"><i
                 class="fa-solid fa-magnifying-glass"></i></a>
-        <a href="cart.html" id="shopping-cart-icon"
+        <a href="/cart.html" id="shopping-cart-container"
             aria-label="Shopping cart icon. Click this to view your shopping cart">
             <i class="fa-solid fa-cart-shopping"></i>
+            <span class="cart-count">0</span>
         </a>
     </header>
     <main>
@@ -85,8 +87,7 @@
                     For any physical mail or packages, please send them to the following
                     address:
                 </p>
-                <iframe class="google-maps"
-                    title="googleMaps"
+                <iframe class="google-maps" title="googleMaps"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2000.442823270433!2d10.755199716328715!3d59.908197881865156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416e8ad77f60ab%3A0x43caa67d85923df0!2sDronning%20Eufemias%20gate%2012%2C%200191%20Oslo!5e0!3m2!1sno!2sno!4v1678624584055!5m2!1sno!2sno"
                     width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>

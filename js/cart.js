@@ -43,6 +43,7 @@ export function onAddToCart(event) {
     button.disabled = true;
   }
   save("cart", cart);
+  updateCartCount();
 }
 
 export function demo() {
@@ -84,7 +85,7 @@ function renderCart() {
       image.alt = item.description;
       var titleColumn = document.createElement("div");
       titleColumn.classList.add("title-col");
-      var title = document.createElement("h4");
+      var title = document.createElement("p");
       title.innerHTML = item.title;
       var quantityColumn = document.createElement("div");
       quantityColumn.classList.add("quantity-col");
@@ -152,6 +153,7 @@ function incrementQuantity(itemId) {
   });
   save("cart", updatedCart);
   renderCart();
+  updateCartCount();
 }
 
 function decrementQuantity(itemId) {
@@ -164,6 +166,7 @@ function decrementQuantity(itemId) {
   });
   save("cart", updatedCart);
   renderCart();
+  updateCartCount();
 }
 
 function removeItemFromCart(itemId) {
@@ -171,6 +174,7 @@ function removeItemFromCart(itemId) {
   const updatedCart = cart.filter((item) => item.id !== itemId);
   save("cart", updatedCart);
   renderCart();
+  updateCartCount();
 }
 
 incrementQuantity();
@@ -189,4 +193,24 @@ document.body.addEventListener("click", function (event) {
       event.preventDefault();
     }
   }
+});
+
+function updateCartCount() {
+  const cart = load("cart") || [];
+  const cartCountElement = document.querySelector(".cart-count");
+
+  if (cart.length > 0) {
+    cartCountElement.style.display = "block"; // Display the cart count if there are items
+    cartCountElement.textContent = cart.length;
+  } else {
+    cartCountElement.style.display = "none"; // Hide the cart count if cart is empty
+  }
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  updateCartCount();
+});
+
+window.addEventListener("popstate", function (event) {
+  updateCartCount();
 });

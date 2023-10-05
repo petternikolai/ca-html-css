@@ -62,7 +62,12 @@
   margin-left: 20px;
 }
 
-.col-last .checkout-button {
+.shop-more-button {
+  margin-left: 20px;
+}
+
+.col-last .checkout-button,
+.col-last .shop-more-button {
   padding: 10px 20px;
   font-size: 1.2em;
   text-decoration: none;
@@ -85,5 +90,4 @@
 
 /* Responsive adjustments for mobile */
 @media (max-width: 768px) {
-  
 }
