@@ -5,40 +5,41 @@ if (cartData && cartData.length > 0 && cartContainer) {
   let subtotal = 0;
 
   cartData.forEach((item) => {
+    const actualPrice =
+      item.discount && parseFloat(item.discount) < parseFloat(item.price)
+        ? parseFloat(item.discount)
+        : parseFloat(item.price);
+
     const cartItem = document.createElement("div");
     cartItem.classList.add("product-row");
 
     const itemImage = document.createElement("img");
     itemImage.src = item.image;
     itemImage.alt = item.description;
+    cartItem.appendChild(itemImage);
 
     const itemInfo = document.createElement("ul");
+    cartItem.appendChild(itemInfo);
+
     const itemName = document.createElement("li");
     itemName.textContent = item.title;
+    itemInfo.appendChild(itemName);
 
     const itemQuantity = document.createElement("li");
     itemQuantity.textContent = `Quantity: ${item.quantity}`;
-
-    const actualPrice =
-      item.discountedPrice < item.price ? item.discountedPrice : item.price;
+    itemInfo.appendChild(itemQuantity);
 
     const itemPrice = document.createElement("p");
     itemPrice.textContent = `$${actualPrice.toFixed(2)}`;
-
-    itemInfo.appendChild(itemName);
-    cartItem.appendChild(itemImage);
-    cartItem.appendChild(itemInfo);
-    cartItem.appendChild(itemQuantity);
     cartItem.appendChild(itemPrice);
 
     cartContainer.appendChild(cartItem);
 
-    const itemSubtotal = actualPrice * item.quantity;
-    subtotal += itemSubtotal;
+    subtotal += actualPrice * item.quantity;
   });
 
   const subtotalElement = document.querySelector(".subtotal");
-  subtotalElement.textContent = ` Subtotal: $${subtotal.toFixed(2)}`;
+  subtotalElement.textContent = `Subtotal: $${subtotal.toFixed(2)}`;
 }
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -49,7 +50,6 @@ document.addEventListener("DOMContentLoaded", function () {
       alert("The cart is empty!");
       event.preventDefault();
     } else {
-      // Clear the cart data from local storage
       localStorage.setItem("cart", JSON.stringify([]));
     }
   });

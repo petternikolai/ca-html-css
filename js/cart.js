@@ -18,8 +18,8 @@ export function onAddToCart(event) {
   const button = event.target;
   const id = button.dataset.id;
   const title = button.dataset.title;
-  const price = button.dataset.price;
-  const discount = button.dataset.discount;
+  const price = parseFloat(button.dataset.price);
+  const discount = parseFloat(button.dataset.discount);
   const image = button.dataset.image;
   const description = button.dataset.description;
 
@@ -127,7 +127,11 @@ function renderCart() {
       cartItems.append(removeColumn);
       removeColumn.appendChild(removeAnchorTag);
 
-      const itemSubtotal = item.price * item.quantity;
+      const actualPrice =
+        item.price !== item.discount
+          ? parseFloat(item.discount)
+          : parseFloat(item.price);
+      const itemSubtotal = actualPrice * item.quantity;
       subtotal += itemSubtotal;
 
       increase.addEventListener("click", () => incrementQuantity(item.id));
