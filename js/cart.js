@@ -49,7 +49,9 @@ export function onAddToCart(event) {
 export function demo() {
   if (document.body.id === "store") {
     const button = document.querySelector("button[data-id]");
-    button.addEventListener("click", onAddToCart);
+    if (button) {
+      button.addEventListener("click", onAddToCart);
+    }
   }
 }
 

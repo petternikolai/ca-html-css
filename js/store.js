@@ -15,8 +15,8 @@ export async function displayGames() {
     largeGameAnchor.href = `/products/product_details.html?id=${games[0].id}`;
 
     const largeImage = document.createElement("img");
-    largeImage.src = games[0].image;
-    largeImage.alt = games[0].description;
+    largeImage.src = games[0].images[0].src;
+    largeImage.alt = games[0].images[0].alt;
 
     largeGameContainer.appendChild(largeGameAnchor).appendChild(largeImage);
 
@@ -30,10 +30,10 @@ export async function displayGames() {
       const gameLiAnchor = document.createElement("a");
       gameLiAnchor.href = `/products/product_details.html?id=${game.id}`;
       const smallImage = document.createElement("img");
-      smallImage.src = game.image;
-      smallImage.alt = game.description;
+      smallImage.src = game.images[0].src;
+      smallImage.alt = game.images[0].alt;
       const gameTitle = document.createElement("p");
-      gameTitle.innerHTML = game.title;
+      gameTitle.innerHTML = game.name;
 
       gamesContainer
         .appendChild(gameList)
@@ -47,9 +47,9 @@ export async function displayGames() {
       mobileContainer.innerHTML += `
           <div class="winter-sale-elements">
             <a href="/products/product_details.html?id=${game.id}">
-              <img src="${game.image}" alt="${game.description}">
+              <img src="${game.images[0].src}" alt="${game.images[0].alt}">
             </a>
-            <p>${game.title}</p>
+            <p>${game.name}</p>
           </div>`;
 
       if (game === games[0]) {
@@ -69,22 +69,22 @@ export async function displayGames() {
     for (let i = 6; i < 9; i++) {
       const game = games[i];
       const discount = Math.round(
-        100 - (game.discountedPrice / game.price) * 100
+        100 - (game.prices.sale_price / game.prices.regular_price) * 100
       );
 
       winterSaleContainer.innerHTML += `
     <div class="winter-sale-elements">
           <a href="/products/product_details.html?id=${game.id}">
-            <img src="${game.image}" alt="${game.description}">
+            <img src="${game.images[0].src}" alt="${game.images[0].alt}">
           </a>
-          <p>${game.title}<br><br></p>
+          <p>${game.name}<br><br></p>
           <div class="flex-row">
             <p class="discount-percentage">-${discount}%</p>
             <div class="prices">
               <p class="discount" style="text-decoration: line-through">
-                $${game.price}
+                $${game.prices.regular_price}
               </p>
-              <p>$${game.discountedPrice}</p>
+              <p>$${game.prices.sale_price}</p>
             </div>
           </div>
         </div>`;
