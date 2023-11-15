@@ -14,7 +14,6 @@ export async function displayProductDetails() {
       loaderContainer.style.display = "none";
     };
 
-    // Assuming game is not null or undefined
     const buttonLabel = isInCart(game.id) ? "ADDED TO CART" : "ADD TO CART";
     const buttonColor = isInCart(game.id) ? "green" : "";
     const buttonBorder = isInCart(game.id) ? "none" : "";
