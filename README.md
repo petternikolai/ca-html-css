@@ -31,12 +31,6 @@ You can list a the tech stack that you've used over here
 git clone https://github.com/petternikolai/ca-html-css.git
 ```
 
-2. Install the dependencies:
-
-```
-npm install
-```
-
 ## Contact
 
 [Twitter](https://twitter.com/petternikolai94)
