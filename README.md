@@ -28,7 +28,7 @@ You can list a the tech stack that you've used over here
 1. Clone the repo:
 
 ```bash
-git clone git@github.com:NoroffFEU/portfolio-1-example.git
+git clone https://github.com/petternikolai/ca-html-css.git
 ```
 
 2. Install the dependencies:
@@ -37,16 +37,8 @@ git clone git@github.com:NoroffFEU/portfolio-1-example.git
 npm install
 ```
 
-### Running
-
-To run the app, run the following commands:
-
-```bash
-npm run start
-```
-
 ## Contact
 
 [Twitter](https://twitter.com/petternikolai94)
 
-[My LinkedIn page](https://www.linkedin.com/in/petter-nikolai-kristoffersen-a829a41b8/)
+[LinkedIn](https://www.linkedin.com/in/petter-nikolai-kristoffersen-a829a41b8/)
