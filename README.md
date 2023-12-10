@@ -15,8 +15,6 @@ The page has the following "advanced" features:
 
 ## Built With
 
-You can list a the tech stack that you've used over here
-
 - HTML
 - CSS
 - JavaScript
