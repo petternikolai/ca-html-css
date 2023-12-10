@@ -47,8 +47,6 @@ npm run start
 
 ## Contact
 
-[My Twitter page](www.twitter.com)
+[Twitter](https://twitter.com/petternikolai94)
 
-[My LinkedIn page](www.linkedin.com)
-
-E-mail: pnkristoffersen@gmail.com
+[My LinkedIn page](https://www.linkedin.com/in/petter-nikolai-kristoffersen-a829a41b8/)
